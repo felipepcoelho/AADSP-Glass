@@ -44,7 +44,7 @@ public class IndexBean
             FacesContext.getCurrentInstance().getExternalContext().redirect("faces/template/menu/Menu.xhtml");
         else{
             FacesContext context = FacesContext.getCurrentInstance();
-            context.addMessage(null, new FacesMessage( FacesMessage.SEVERITY_WARN,"ACESSO NEGADO",  "Não foi possivel autenticar o usuÃ¡rio com os dados informados") );
+            context.addMessage(null, new FacesMessage( FacesMessage.SEVERITY_WARN,"ACESSO NEGADO",  "Não foi possivel autenticar o usuário com os dados informados") );
 
         }
     }
