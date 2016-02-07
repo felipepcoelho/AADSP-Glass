@@ -1,6 +1,7 @@
 
-package ANNOTATIONS;
+package ANNOTATIONS.CRUD;
 
+import ANNOTATIONS.Autenticacao;
 import org.hibernate.Query;
 import org.hibernate.Session;
 

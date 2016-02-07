@@ -1,7 +1,7 @@
 package CONTROLLER;
 
 import ANNOTATIONS.Autenticacao;
-import ANNOTATIONS.AutenticacaoCRUD;
+import ANNOTATIONS.CRUD.AutenticacaoCRUD;
 import UTILS.HibernateUtil;
 import java.io.IOException;
 import javax.faces.application.FacesMessage;
