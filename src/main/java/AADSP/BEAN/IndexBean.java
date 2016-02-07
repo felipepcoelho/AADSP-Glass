@@ -2,6 +2,7 @@ package AADSP.BEAN;
 
 import AADSP.ANNOTATTIOS.Autenticacao;
 import AADSP.ANNOTATTIOS.CRUD.AutenticacaoCRUD;
+import AADSP.UTILS.BaseBean;
 import AADSP.UTILS.HibernateUtil;
 import java.io.IOException;
 import javax.faces.application.FacesMessage;
@@ -10,24 +11,25 @@ import javax.faces.context.FacesContext;
 
 
 @ManagedBean(name="indexBean")
-public class IndexBean 
+public class IndexBean extends BaseBean
 {
-    private String login;
-    private String senha;
-
-    public String getLogin() {
+    public String getLogin()
+    {
         return login;
     }
 
-    public void setLogin(String login) {
+    public void setLogin(String login)
+    {
         this.login = login;
     }
 
-    public String getSenha() {
+    public String getSenha()
+    {
         return senha;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(String senha)
+    {
         this.senha = senha;
     }
 
@@ -46,4 +48,8 @@ public class IndexBean
 
         }
     }
+    
+    private static final long serialVersionUID = 5585493974059809141L;
+    private String login;
+    private String senha;
 }

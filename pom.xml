@@ -34,6 +34,18 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- JAVAX INJECT -->
+        <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
+        </dependency>
+        <!-- COMMONS LANG3 -->
+        <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.1</version>
+        </dependency>
         <!-- Hibernate Core -->
         <dependency>
             <groupId>org.hibernate</groupId>
