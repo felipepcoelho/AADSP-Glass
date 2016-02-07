@@ -11,9 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class MenuPrincipalController {
     
     @RequestMapping("/controller")
-    public ModelAndView hello() {
+    public ModelAndView menuPrincipal() {
             String message = "Welcome to Spring MVC 4.0!";
-
+            System.out.println("ENTREI NO CONTROLE");
             return new ModelAndView("/menuPricipal/MenuView", "message", message);
     }
 }

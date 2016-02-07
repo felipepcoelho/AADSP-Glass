@@ -2,11 +2,12 @@
 package AADSP.ANNOTATTIOS.CRUD;
 
 import AADSP.ANNOTATTIOS.Autenticacao;
+import java.io.Serializable;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
 
-public class AutenticacaoCRUD{
+public class AutenticacaoCRUD implements Serializable{
     
     private Session sessao;
     

@@ -11,6 +11,7 @@ import javax.faces.context.FacesContext;
 
 
 @ManagedBean(name="indexBean")
+
 public class IndexBean extends BaseBean
 {
     public String getLogin()
