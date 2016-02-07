@@ -14,6 +14,6 @@ public class MenuPrincipalController {
     public ModelAndView hello() {
             String message = "Welcome to Spring MVC 4.0!";
 
-            return new ModelAndView("/faces/menuPricipal/MenuView", "message", message);
+            return new ModelAndView("/menuPricipal/MenuView", "message", message);
     }
 }
