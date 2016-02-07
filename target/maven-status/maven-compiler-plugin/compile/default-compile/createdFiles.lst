@@ -1,0 +1,5 @@
+UTILS\HibernateUtil.class
+INTERFACES\CRUD.class
+ANNOTATIONS\Autenticacao.class
+CONTROLLER\IndexBean.class
+ANNOTATIONS\AutenticacaoCRUD.class
