@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <delete>
+    <fileset dir="C:\Users\Felipe\Documents\NetBeansProjects\AADSP\AADSP/target/AADSP-1.0/WEB-INF/lib">
+      <exclude name="lib"/>
+    </fileset>
+  </delete>
+</target>
+</project>

@@ -9,11 +9,12 @@ import java.io.Serializable;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
 
 @ManagedBean(name="indexBean")
-@RequestScoped
+@SessionScoped
 public class IndexBean extends BaseBean implements Serializable
 {
     public String getLogin()
@@ -44,7 +45,7 @@ public class IndexBean extends BaseBean implements Serializable
         autenticacao.setSenha(senha);
         crud.setSession(HibernateUtil.getSessionFactory().openSession());
         if(crud.autenticar(autenticacao))
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/menuPrincipal/controller.html");
+            FacesContext.getCurrentInstance().getExternalContext().redirect("./menuPrincipal/controller.html");
         else{
             FacesContext context = FacesContext.getCurrentInstance();
             context.addMessage(null, new FacesMessage( FacesMessage.SEVERITY_WARN,"ACESSO NEGADO",  "Não foi possivel autenticar o usuário com os dados informados") );

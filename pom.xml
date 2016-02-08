@@ -116,6 +116,7 @@
     </dependencies>
 
     <build>
+        <finalName>${project.name}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -162,6 +163,29 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Delete folder LIB with the execution of install. -->
+            <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                        <execution>
+                                <phase>install</phase>
+                                <goals>
+                                        <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                        <tasks>
+                                                <delete>
+                                                        <fileset
+                                                                dir="${basedir}/target/${project.build.finalName}/WEB-INF/lib">
+                                                                <exclude name="lib" />
+                                                        </fileset>
+                                                </delete>
+                                        </tasks>
+                                </configuration>
+                        </execution>
+                </executions>
+        </plugin>
         </plugins>
         
         <resources>
