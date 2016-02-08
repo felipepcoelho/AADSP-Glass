@@ -5,14 +5,16 @@ import AADSP.ANNOTATTIOS.CRUD.AutenticacaoCRUD;
 import AADSP.UTILS.BaseBean;
 import AADSP.UTILS.HibernateUtil;
 import java.io.IOException;
+import java.io.Serializable;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
 
 @ManagedBean(name="indexBean")
-
-public class IndexBean extends BaseBean
+@RequestScoped
+public class IndexBean extends BaseBean implements Serializable
 {
     public String getLogin()
     {
